@@ -11,8 +11,8 @@ class teacher extends Model
     protected $username="user";
     protected $password="password";
     protected $email = "email";
-    protected $first ="firstname";
-    protected $last ="lastname";
+    protected $firstname ="firstname";
+    protected $lastname ="lastname";
 
 
     }
