@@ -16,5 +16,5 @@ class teacher extends Model
         $this->teacherpasswd=$passwd;
         $this->teacheruser=$teacher; 
     }
-    //
+    
 }

@@ -6,7 +6,10 @@ use Illuminate\Http\Request;
 
 class Login extends Controller
 {
-        public function studentLog(){
-            
+        public function index(){
+            return view('index');
+        }
+        public function register(){
+            return view('register');
         }
 }
