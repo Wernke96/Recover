@@ -12,4 +12,8 @@ class Login extends Controller
         public function register(){
             return view('register');
         }
+        public function question(){
+            
+            return view('question');
+        }
 }
