@@ -21,6 +21,7 @@ class Login extends Controller
             $valid = $request->validate([
                 'email'=>'required',
                 'ln'=>'required',
+                'fn'=>'required',
                 'username'=>'required',
                 'password'=>'required',
 
@@ -29,7 +30,8 @@ class Login extends Controller
             $teacher = new teacher;
             $teacher->username = $request->input('username');
             $teacher->email = $request->input('email');
-            //$teacher->Last_name = $request->input('Last_name');
+            $teacher->firstname = $request->input('fn');
+            $teacher->Lastname = $request->input('ln');
             $teacher->password = $request->input('password');
             $teacher->save();
           
