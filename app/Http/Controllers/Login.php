@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
+use App\teacher;
 use DB;
 class Login extends Controller
 {
@@ -18,21 +19,21 @@ class Login extends Controller
         }
         public function stores(Request $request){
             $valid = $request->validate([
-                'fn'=>'required',
+                'email'=>'required',
                 'ln'=>'required',
                 'username'=>'required',
                 'password'=>'required',
 
             ]);
             print_r($valid);
-            $teacher = new $teacher();
+            $teacher = new teacher;
             $teacher->username = $request->input('username');
-            $teacher->firstname = $request->input('firstname');
-            $teacher->Last_name = $request->input('Last_name');
+            $teacher->email = $request->input('email');
+            //$teacher->Last_name = $request->input('Last_name');
             $teacher->password = $request->input('password');
             $teacher->save();
           
-            return redirect('/stores')->with('success', 'Post Created');
+            return redirect('/')->with('success', 'Post Created');
 
     }
 }

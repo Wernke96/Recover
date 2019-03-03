@@ -77,7 +77,7 @@
         @csrf
             <div id="register-container">        
               <label for="First_name">First Name</label>
-              <input type="text" name="fn" required>
+              <input type="text" name="email" required>
           
               <label for="Last_name">Last Name</label>
               <input type="text" name="ln" required>
