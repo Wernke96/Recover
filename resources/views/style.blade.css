@@ -1,0 +1,99 @@
+/* Colors
+    #A61919;
+    #A6A619;
+    #005580;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700|ZCOOL+QingKe+HuangYou');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+body {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 2em;
+	grid-gap: 1em;
+	font-family: 'Open Sans', sans-serif;
+    background: #eaeaea;
+    max-width: 70em;
+}
+
+header,
+footer {
+	grid-column: span 2;
+}
+
+header h1 {
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	font-weight: 400;
+}
+
+#question-header {
+	display: flex;
+	justify-content: space-between;
+}
+#question-paragraph {
+    text-align: justify;
+}
+#question-number {
+	align-self: flex-start;
+	font-weight: bold;
+}
+
+#question-timer {
+	align-self: flex-end;
+	color: teal;
+}
+
+.answer {
+	margin: 0em 0.5em 1em 2em;
+}
+
+#next-question-button {
+	align-self: flex-end;
+	background: none;
+	border: none;
+	font-weight: bold;
+	font-family: inherit;
+	padding: 0;
+	margin-top: 1em;
+	transition: 0.2s all ease-in-out;
+	font-size: medium;
+	margin: 1em 0 1em 0em;
+}
+
+#next-question-button:hover {
+	color: teal;
+	cursor: pointer;
+}
+
+.card-container {
+    grid-column: span 2;
+	background: #fafafa;
+	border-radius: 5px;
+	align-items: start;
+    display: flex;
+    flex-direction: row;
+}
+
+#question-container, #answer-container {
+    width: 50%;
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+	margin: 0 auto;
+	padding: 1em;
+}
+
+header,
+main,
+footer {
+	display: flex;
+}
+
+header,
+footer {
+	justify-content: center;
+	align-items: center;
+}
