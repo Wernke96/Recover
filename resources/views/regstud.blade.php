@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html lang="en">
    <head>
-      <link href="{{ URL::asset('/css/style.blade.css') }}" rel="stylesheet" type="text/css" >
+      <link rel="stylesheet" href="{{ URL::asset('/css/style.blade.css') }}" type="text/css">
       <title>ELLo Mate | Student</title>
       <meta charset="UTF-8">
       <style>
          * {
-            box-sizing: border-box;
+            box-sizing: border-box
          }
 
          header {
@@ -63,17 +63,6 @@
          button:hover {
          opacity:0.8;
          }
-         #register-link {
-            text-align: center;
-            font-size: small;
-         }
-         #register-link a {
-            color: #005580;
-            text-decoration: none;
-         }
-         #register-link a:hover {
-            text-decoration: underline;
-         }
       </style>
    </head>
    <header>
@@ -82,18 +71,25 @@
       </nav>
    </header>
      <div class="card-container">
-      <p id="register-header">Login</p>
-        <form action="action_page.php">
-            <div id="register-container">    
+      <p id="register-header">Register Student</p>
+   
+        <form method="post" action="/stores">
+        @csrf
+            <div id="register-container">        
+              <label for="First_name">First Name</label>
+              <input type="text" name="fn" required>
+          
+              <label for="Last_name">Last Name</label>
+              <input type="text" name="ln" required>
+              <label for="First_name">Email</label>
+              <input type="text" name="email" required>
               <label for="username">Username</label>
-              <input type="text" name="username" required>
+              <input type="text" name="username" >
 
               <label for="password">Password</label>
               <input type="text" name="password" required>
 
-               <p class="signupbtn" id="register-link"><a href="{!! url('/question') !!}">Login</p>
-
-               <p id="register-link"><a href="{!! url('/registar') !!}">Create an account</p>
+               <button type="submit" class="signupbtn">Sign Up</button>
             </div>
           </form>
       </div>

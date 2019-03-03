@@ -19,12 +19,14 @@
       <div id="answer-container">
         <p id="question-timer"><span id="minutes"></span>:<span id="seconds"></span></p>
          <p id="answer-header">What did Greg want from the store?</p>
+
          <form>
             <input class="answer" type="radio" name="gender" value="male">eget libero<br>
             <input class="answer" type="radio" name="gender" value="female">vel quam dolor<br>
             <input class="answer" type="radio" name="gender" value="other">sit amet consectetur<br>
             <input class="answer" type="radio" name="gender" value="other">sit elit adipiscing elit
          </form>
+         
          <input id="next-question-button" type="submit" value="Next">
       </div>
     </div>

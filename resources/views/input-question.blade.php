@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
    <head>
-      <link href="{{ URL::asset('/css/style.blade.css') }}" rel="stylesheet" type="text/css" >
+      <link rel="stylesheet" href="{{ URL::asset('/css/style.blade.css') }}" type="text/css">
       <title>ELLo Mate | Student</title>
       <meta charset="UTF-8">
       <style>
@@ -63,17 +63,6 @@
          button:hover {
          opacity:0.8;
          }
-         #register-link {
-            text-align: center;
-            font-size: small;
-         }
-         #register-link a {
-            color: #005580;
-            text-decoration: none;
-         }
-         #register-link a:hover {
-            text-decoration: underline;
-         }
       </style>
    </head>
    <header>
@@ -82,18 +71,27 @@
       </nav>
    </header>
      <div class="card-container">
-      <p id="register-header">Login</p>
-        <form action="action_page.php">
-            <div id="register-container">    
-              <label for="username">Username</label>
-              <input type="text" name="username" required>
+      <p id="register-header">Input Question</p>
+   
+        <form method="post" action="/input-question">
+        @csrf
+            <div id="register-container">        
+              <label for="paragraph">Paragraph</label>
+              <textarea rows="4" cols="50" name="paragraph" required></textarea>
+          
+              <label for="question">Question</label>
+              <textarea rows="4" cols="50" name="question" required></textarea>
 
-              <label for="password">Password</label>
-              <input type="text" name="password" required>
+              <label for="correct-ans">Correct Answer</label>
+              <textarea rows="4" cols="50" name="correct-ans" required></textarea>
 
-               <p class="signupbtn" id="register-link"><a href="{!! url('/question') !!}">Login</p>
+              <label for="incorrect-ans1">Incorrect Answer</label>
+              <textarea rows="4" cols="50" name="incorrect-ans1" ></textarea>
 
-               <p id="register-link"><a href="{!! url('/registar') !!}">Create an account</p>
+              <label for="incorrect-ans2">Incorrect Answer</label>
+              <textarea rows="4" cols="50" name="incorrect-ans2" ></textarea>
+
+               <button type="submit" class="signupbtn">Submit Prompt</button>
             </div>
           </form>
       </div>

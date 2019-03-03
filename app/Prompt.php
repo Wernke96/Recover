@@ -4,24 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Prompt extends Model
+class prompt extends Model
 {
-    protected $table1 = 'PromptL1';
-    protected $table2 = 'PromptL2';
-    protected $table3 = 'PromptL3';
-    protected $table4 = 'PromptL4';
-    protected $table5 = 'PromptL5';
-    protected $table6 = 'PromptL6';
-    protected $table7 = 'PromptL7';
-    protected $table8 = 'PromptL8';
-    protected $table9 = 'PromptL9';
-    protected $table10 = 'PromptL10';
-
+    protected $table = 'prompt';
     protected $paragraph = 'paragraph';
     protected $question = 'question';
     protected $correctA = 'correctA';
     protected $incorrectA1 = 'incorrectA1';
     protected $incorrectA2 = 'incorrectA2';
+    protected $level = 'level';
 }
 
     /*

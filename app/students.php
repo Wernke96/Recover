@@ -4,33 +4,34 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Student extends Model
+class students extends Model
 {
-    protected $table = 'Student';
+    protected $table = 'students';
     protected $username = 'username';
     protected $password = 'password';
     protected $nameF = 'FirstName';
     protected $nameL = 'LastName';
-    protected $L1NumQAsked = 'L1NumQAsked';
-    protected $L1NumQCorrect = 'L1NumQCorrect';
-    protected $L2NumQAsked = 'L2NumQAsked';
-    protected $L2NumQCorrect = 'L2NumQCorrect';
-    protected $L3NumQAsked = 'L3NumQAsked';
-    protected $L3NumQCorrect = 'L3NumQCorrect';
-    protected $L4NumQAsked = 'L4NumQAsked';
-    protected $L4NumQCorrect = 'L4NumQCorrect';
-    protected $L5NumQAsked = 'L5NumQAsked';
-    protected $L5NumQCorrect = 'L5NumQCorrect';
-    protected $L6NumQAsked = 'L6NumQAsked';
-    protected $L6NumQCorrect = 'L6NumQCorrect';
-    protected $L7NumQAsked = 'L7NumQAsked';
-    protected $L7NumQCorrect = 'L7NumQCorrect';
-    protected $L8NumQAsked = 'L8NumQAsked';
-    protected $L8NumQCorrect = 'L8NumQCorrect';
-    protected $L9NumQAsked = 'L9NumQAsked';
-    protected $L9NumQCorrect = 'L9NumQCorrect';
-    protected $L10NumQAsked = 'L10NumQAsked';
-    protected $L10NumQCorrect = 'L10NumQCorrect';
+    protected $email = 'email';
+    // protected $L1NumQAsked = 'L1NumQAsked';
+    // protected $L1NumQCorrect = 'L1NumQCorrect';
+    // protected $L2NumQAsked = 'L2NumQAsked';
+    // protected $L2NumQCorrect = 'L2NumQCorrect';
+    // protected $L3NumQAsked = 'L3NumQAsked';
+    // protected $L3NumQCorrect = 'L3NumQCorrect';
+    // protected $L4NumQAsked = 'L4NumQAsked';
+    // protected $L4NumQCorrect = 'L4NumQCorrect';
+    // protected $L5NumQAsked = 'L5NumQAsked';
+    // protected $L5NumQCorrect = 'L5NumQCorrect';
+    // protected $L6NumQAsked = 'L6NumQAsked';
+    // protected $L6NumQCorrect = 'L6NumQCorrect';
+    // protected $L7NumQAsked = 'L7NumQAsked';
+    // protected $L7NumQCorrect = 'L7NumQCorrect';
+    // protected $L8NumQAsked = 'L8NumQAsked';
+    // protected $L8NumQCorrect = 'L8NumQCorrect';
+    // protected $L9NumQAsked = 'L9NumQAsked';
+    // protected $L9NumQCorrect = 'L9NumQCorrect';
+    // protected $L10NumQAsked = 'L10NumQAsked';
+    // protected $L10NumQCorrect = 'L10NumQCorrect';
 }
 
 /*

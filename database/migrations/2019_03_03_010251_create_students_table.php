@@ -1,9 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
 class CreateStudentsTable extends Migration
 {
     /**
@@ -15,10 +13,14 @@ class CreateStudentsTable extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('username');
+            $table->string('Email');
+            $table->string('password');
+            $table->string('firstName');
+            $table->string('LastName');
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *

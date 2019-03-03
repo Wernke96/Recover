@@ -6,7 +6,7 @@
       <meta charset="UTF-8">
       <style>
          * {
-               box-sizing: border-box
+               box-sizing: border-box;
          }
          body {
             grid-template-columns: 3fr 1fr;
