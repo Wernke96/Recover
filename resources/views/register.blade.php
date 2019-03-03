@@ -72,16 +72,18 @@
    </header>
      <div class="card-container">
       <p id="register-header">Register</p>
-        <form action="action_page.php">
+   
+        <form method="post" action="/submit">
+        @csrf
             <div id="register-container">        
-              <label for="fn">First Name</label>
+              <label for="First_name">First Name</label>
               <input type="text" name="fn" required>
           
-              <label for="ln">Last Name</label>
+              <label for="Last_name">Last Name</label>
               <input type="text" name="ln" required>
           
               <label for="username">Username</label>
-              <input type="text" name="username" required>
+              <input type="text" name="username" >
 
               <label for="password">Password</label>
               <input type="text" name="password" required>

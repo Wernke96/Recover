@@ -6,15 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class teacher extends Model
 {
-    private $id;
-    private $teacheruser;
-    private $teacherpasswd;
+    protected $table = "teacher";
 
-    public function construct(){
-        }
-    public function setEmail(){
-        $this->teacherpasswd=$passwd;
-        $this->teacheruser=$teacher; 
+    protected $id = "id";
+
+    protected $username="user";
+
+    protected $password="password";
+
+    
+    
     }
     
-}
+

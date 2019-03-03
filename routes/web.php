@@ -13,3 +13,5 @@
 
 Route::get('/', 'Login@index');
 Route::get('/registar','Login@register');
+Route::get('/question','Login@question');
+Route::post("/submit",'Login@stores');
