@@ -63,6 +63,17 @@
          button:hover {
          opacity:0.8;
          }
+         #register-link {
+            text-align: center;
+            font-size: small;
+         }
+         #register-link a {
+            color: #005580;
+            text-decoration: none;
+         }
+         #register-link a:hover {
+            text-decoration: underline;
+         }
       </style>
    </head>
    <header>
@@ -82,7 +93,7 @@
 
                <button type="submit" class="signupbtn">Login</button>
 
-               <p><a href="">Create an account</p>
+               <p id="register-link"><a href="../resources/views/register.blade.php">Create an account</p>
             </div>
           </form>
       </div>
