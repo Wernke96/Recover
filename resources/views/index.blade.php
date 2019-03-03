@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
    <head>
-      <link rel="stylesheet" href="style.blade.css" type="text/css">
+      <link href="{{ URL::asset('/css/style.blade.css') }}" rel="stylesheet" type="text/css" >
       <title>ELLo Mate | Student</title>
       <meta charset="UTF-8">
       <style>
@@ -81,6 +81,8 @@
               <input type="text" name="password" required>
 
                <button type="submit" class="signupbtn">Login</button>
+
+               <p><a href="">Create an account</p>
             </div>
           </form>
       </div>
