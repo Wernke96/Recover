@@ -4,8 +4,14 @@
     #005580;
 */
 
+
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700|ZCOOL+QingKe+HuangYou');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+* {
+	box-sizing: border-box
+ }
+ 
 body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -71,7 +77,11 @@ header h1 {
 	border-radius: 5px;
 	align-items: start;
     display: flex;
-    flex-direction: row;
+	flex-direction: row;
+	transition: 0.2s all ease-in-out;
+}
+.card-container:hover {
+	box-shadow: 0px 10px 35px #bbbbbb;
 }
 
 #question-container, #answer-container {
