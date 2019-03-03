@@ -7,6 +7,8 @@ class teacher extends Model
     protected $id = "id";
     protected $username="user";
     protected $password="password";
+    protected $lastName="lastName";
+    protected $firstname="firstName";
     
     
     }

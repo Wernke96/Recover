@@ -17,5 +17,7 @@ Route::get('/question','Login@question');
 Route::post("/submit",'Login@stores');
 Route::post("/stores",'Login@studentSubmit');
 Route::get("/regstud","Login@studnetregview");
-Route::post("/input-question","Login@createprompt");
+//Route::post("/input-question","Login@inputquestionpost");
+Route::post("/createprompt","Login@createprompt");
+Route::get("/create-question","PageController@creatquestview");
 Route::get("/question","PageController@questview");

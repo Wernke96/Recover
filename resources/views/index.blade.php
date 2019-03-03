@@ -93,7 +93,8 @@
 
                <p class="signupbtn" id="register-link"><a href="{!! url('/question') !!}">Login</p>
 
-               <p id="register-link"><a href="{!! url('/registar') !!}">Create an account</p>
+               <p id="register-link"><a href="{!! url('/regstud') !!}">Create an account/Student</p>
+               <p id="register-link"><a href="{!! url('/registar') !!}">Create an account/Teacher</p>
             </div>
           </form>
       </div>

@@ -22,5 +22,6 @@ class VerifyCsrfToken extends Middleware
         //
         'stripe/*',
         'http://localhost:8000/submit',
+        'http://localhost:8000/createprompt',
     ];
 }

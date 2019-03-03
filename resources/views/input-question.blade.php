@@ -73,7 +73,7 @@
      <div class="card-container">
       <p id="register-header">Input Question</p>
    
-        <form method="post" action="/input-question">
+        <form method="post" action="/createprompt">
         @csrf
             <div id="register-container">        
               <label for="paragraph">Paragraph</label>

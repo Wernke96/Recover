@@ -74,7 +74,7 @@
       <p id="register-header">Register Student</p>
    
         <form method="post" action="/stores">
-        @csrf
+        
             <div id="register-container">        
               <label for="First_name">First Name</label>
               <input type="text" name="fn" required>

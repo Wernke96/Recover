@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use App\teacher;
 use App\students;
+use App\prompt;
 
 use DB;
 class Login extends Controller
@@ -22,9 +23,29 @@ class Login extends Controller
         public function studnetregview(){
             return view('regstud');
         }
+     
 
-        public function createprompt(){
-            return view('input-question');
+        public function createprompt(Request $request){
+            $valid = $request->validate([
+                'paragraph'=>'required',
+                'question'=>'required',
+                'correctA'=>'required',
+                'incorrectA1'=>'required',
+                'incorrectA2'=>'required',
+                'level'=>'required',
+
+            ]);
+            print_r($valid);
+            $prompt = new prompt;
+            $prompt->paragraph = $request->input('paragraph');
+            $prompt->question = $request->input('question');
+            $prompt->correctA = $request->input('correctA');
+            $prompt->incorrectA1 = $request->input('incorrectA1');
+            $prompt->incorrectA2 = $request->input('incorrectA2');
+            $prompt->level = $request->input('level');
+            $prompt->save();
+          
+            return redirect('/')->with('success', 'Post Created');
         }
 
         public function stores(Request $request){
